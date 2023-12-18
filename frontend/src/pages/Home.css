@@ -1,0 +1,63 @@
+.products-wraper {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-template-rows: 1fr;
+    grid-row: auto;
+}
+.products-wraper .card {
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+.products-wraper .card a{
+    text-decoration: none;
+    color:#000
+}
+.products-wraper .card:hover {
+    box-shadow: 1px 1px 15px 3px #e7e7e7;
+}
+
+.products-wraper .card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+}
+
+.products-wraper .card .product-content{
+    padding: 10px;
+}
+.products-wraper .card .product-content .pro-short-desc{
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+.products-wraper .card .product-content .price{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(202, 27, 27);
+}
+.products-wraper .card .product-content .pro-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.products-wraper .card .product-content .pro-footer .rate span{
+    color: rgba(197, 168, 4, 0.89);
+}
+.products-wraper .card .add-to-care-btn{
+    background-color: rgb(14, 148, 148);
+    width: 100%;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.products-wraper .card .product-content .pro-footer .add-to-care-btn:hover{
+    background-color: rgb(11, 116, 116);
+}
