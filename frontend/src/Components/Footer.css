@@ -1,5 +1,8 @@
 footer {
-  background-color: rgb(9, 9, 45);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +16,6 @@ footer .footer-wraper {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   gap: 20px;
-  margin-bottom: 30px;
 }
 
 footer .footer-wraper .foot-menu ul a {
@@ -22,7 +24,7 @@ footer .footer-wraper .foot-menu ul a {
   list-style: none;
 }
 footer .footer-wraper .foot-menu ul a li:hover {
-  color: #f1c50e;
+  color: #ffe065;
 }
 footer .footer-wraper .foot-social {
   display: flex;

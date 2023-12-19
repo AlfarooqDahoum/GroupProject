@@ -9,6 +9,7 @@ h1{
 .cart-content-wrapper {
   border: 1px solid #b2b2b2;
   padding: 20px;
+  border-radius: 1rem;
 }
 table,thead,tbody {
   display: block;
@@ -17,6 +18,7 @@ table,thead,tbody {
 table thead tr {
   background-color: #b2b2b2;
   padding: 15px 0;
+  border-radius: 1rem;
 }
 table tbody tr button  {
   background: none;

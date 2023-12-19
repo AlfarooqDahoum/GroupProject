@@ -97,6 +97,7 @@ export default function Cart() {
                           </option>
                         )
                       )}
+                                    <br />
                     </select>
                   </td>
                   <td>£{total.toFixed(2)}</td>

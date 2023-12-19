@@ -14,10 +14,10 @@ export default function Footer() {
             </div>
             <div class="foot-social">
                 <ul>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i className="fa-brands fa-telegram"></i></a>
-                    <a href="#"><i className="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://telegram.org" target="_blank"><i className="fa-brands fa-telegram"></i></a>
+                    <a href="https://mail.google.com" target="_blank"><i className="fa-solid fa-envelope"></i></a>
                 </ul>   
             </div>
             <div className="foot-address">
