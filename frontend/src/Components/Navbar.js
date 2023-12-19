@@ -9,24 +9,21 @@ export default function Navbar() {
         <div className="top-header">
           <nav className="menu" id="top-menu">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About us</a></li>
-              <li><a href="/contact">Contact us</a></li>
+            <a href="/"><li>Home</li></a>
+                    <a href="/about"><li>About us</li></a>
+                    <a href="/contact"><li>Contact us</li></a>
             </ul>
           </nav>
           <img
   src={LogoImage}
   alt="Logo"
   className="logo-image"
-  style={{ width: '80px', height: 'auto' }}
+  style={{ width: '80px', height: 'auto', alignSelf: 'center' }}
 />
           <div className="header-links">
             <a href="/cart/" className="basket-link">
               <span className="material-symbols-outlined basket">shopping_basket</span>
             </a>
-            <button type="button" className="login-register">
-            Login / Register
-          </button>
           </div>
         </div>
       </header>

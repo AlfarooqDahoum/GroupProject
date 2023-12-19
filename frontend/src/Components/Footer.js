@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="footer-wraper">
             <div className="foot-menu">
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About us</li></a>
-                    <a href="#"><li>Contact us</li></a>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/about"><li>About us</li></a>
+                    <a href="/contact"><li>Contact us</li></a>
                 </ul>   
             </div>
             <div class="foot-social">

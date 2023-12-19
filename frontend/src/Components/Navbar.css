@@ -10,7 +10,10 @@ header .top-header {
   }
 header .top-header img{
     width: 100px;
-    margin: auto 10px;
+    margin: 0 10px;
+}
+.TitleTitle{
+  font-size: 80px;
 }
 header .top-header .search{
     box-shadow: 1px 1px 3px 1px #e7e7e7;
@@ -102,17 +105,4 @@ nav .menu span.hamber{
 
 .basket-link {
     margin-left: 10px;
-  }
-  .login-register {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    color: #ffffff;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  .login-register:hover {
-    background-color: #fff;
-    color: #000000;
   }

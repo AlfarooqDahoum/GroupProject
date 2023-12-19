@@ -35,7 +35,6 @@ export default function Product({ product, addToCart }) {
   return (
     <div className="card">
       <Link to={`/product/${product._id}`}>
-        <p>productID: {product._id}</p>
         <img src={product.image} alt="" />
         <div className="product-content">
           <h4 className="pro-title">{product.name}</h4>

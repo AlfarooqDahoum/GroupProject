@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../Components/Product";
 import "./Home.css";
+import WP from './WP.jpg'
 
 export default function Home({ addToCart }) {
   const [productsData, setProductsData] = useState([]);
@@ -23,6 +24,12 @@ export default function Home({ addToCart }) {
 
   return (
     <div>
+      <div className="theInfo">
+      <h1 className="TitleTitle">MuscleGrowth</h1>
+        <h3>Feel free to look around</h3>
+        <p>whatever catches your eye, get it</p>
+      </div>
+      <h1>Our Products</h1>
       <div className="products-wraper">
         {
           productsData.map((product) => (
