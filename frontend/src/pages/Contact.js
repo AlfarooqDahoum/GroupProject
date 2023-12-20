@@ -8,6 +8,8 @@ const Contact = () => {
     message: '',
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -17,17 +19,23 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission here (e.g., send data to backend)
     console.log(formData);
-    // You can add your logic to send data to the backend or perform other actions
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: '', email: '', message: '' });
+    }, 3000); // ResetS Submission status after 3 seconds
   };
 
   return (
     <div className='theContact'>
-      <p>Connect with us to explore limitless possibilities. Your feedback matters; let's make your inquiries or suggestions the cornerstone of our progress</p>
-      <br />
-      <div className="contact-form-container">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
+      {!submitted ? (
+        <div>
+          <p className='paragraph'>Connect with us to explore limitless possibilities. Your feedback matters; let's make your inquiries or suggestions the cornerstone of our progress</p>
+          <br />
+          <div className="contact-form-container">
+            <h2>Contact Us</h2>
+            <form onSubmit={handleSubmit}>
+            <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -59,13 +67,18 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br />
+        </div>
+      ) : (
+        <p className='paragraph'>Thank you! Your message has been sent.</p>
+        
+      )}
     </div>
   );
 };
