@@ -23,7 +23,7 @@ const Contact = () => {
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', email: '', message: '' });
-    }, 3000); // ResetS Submission status after 3 seconds
+    }, 3000); // Resets Submission status after 3 seconds
   };
 
   return (
@@ -31,7 +31,7 @@ const Contact = () => {
       {!submitted ? (
         <div>
           <p className='paragraph'>Connect with us to explore limitless possibilities. Your feedback matters; let's make your inquiries or suggestions the cornerstone of our progress</p>
-          <br />
+          <br /><br /><br /><br /><br />
           <div className="contact-form-container">
             <h2>Contact Us</h2>
             <form onSubmit={handleSubmit}>
@@ -73,7 +73,6 @@ const Contact = () => {
           <br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br />
-          <br /><br /><br /><br />
         </div>
       ) : (
         <p className='paragraph'>Thank you! Your message has been sent.</p>

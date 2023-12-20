@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Product from "../Components/Product";
 import "./Home.css";
-import WP from './WP.jpg'
 
 export default function Home({ addToCart }) {
   const [productsData, setProductsData] = useState([]);
